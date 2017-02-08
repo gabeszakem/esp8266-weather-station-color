@@ -1,3 +1,5 @@
+This forked copy has been adapted to be compatible with a NodeMCU 1.0 with different pin allocations for the TFT display interface.
+
 # esp8266-weather-station-color
 
 ESP8266 Weather Station in Color using ILI9341 TFT 240x320 display
