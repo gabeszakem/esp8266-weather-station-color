@@ -216,5 +216,5 @@ const GFXglyph ArialRoundedMTBold_36Glyphs[] PROGMEM = {
     {  4805,  13,  33,  15,    0,  -26 } // '}'
 };
 const GFXfont ArialRoundedMTBold_36 PROGMEM = {
-(uint8_t  *)ArialRoundedMTBold_36Bitmaps,(GFXglyph *)ArialRoundedMTBold_36Glyphs,0x20, 0x7E, 43};
+(uint8_t  *)ArialRoundedMTBold_36Bitmaps,(GFXglyph *)ArialRoundedMTBold_36Glyphs,0x20, 0x7D, 43};
 

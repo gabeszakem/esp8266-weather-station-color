@@ -28,6 +28,7 @@ void GfxUi::drawString(int x, int y, char *text) {
   int16_t x1, y1;
   uint16_t w, h;
   _tft->setTextWrap(false);
+  // Really this should be based on the last time drawn to get the box dimensions correct...
   _tft->getTextBounds(text, 0, 0, &x1, &y1, &w, &h);
   switch (_alignment) {
     case LEFT:
@@ -41,7 +42,8 @@ void GfxUi::drawString(int x, int y, char *text) {
       break;
   }
   if (_textColor != _backgroundColor) {
-    _tft->fillRect(x1, y - h -1, w + 1, h + 1, _backgroundColor);
+    // Tweak erase block dimensions to cover old text
+    _tft->fillRect(x1-3, y - h -1, w + 6, h + 2, _backgroundColor);
   }
   _tft->setCursor(x1, y);
   _tft->print(text);

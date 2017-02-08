@@ -55,7 +55,7 @@ See more at http://blog.squix.ch
  * Important: see settings.h to configure your settings!!!
  * ***************************/
 
-Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC);
+Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC, TFT_RST);
 GfxUi ui = GfxUi(&tft);
 
 

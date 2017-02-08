@@ -22,18 +22,19 @@ See more at http://blog.squix.ch
 const int UPDATE_INTERVAL_SECS = 10 * 60; // Update every 10 minutes
 
 // Pins for the ILI9341
-#define TFT_DC 2
-#define TFT_CS 5
+#define TFT_DC D3
+#define TFT_CS D8
+#define TFT_RST D4
 
 // TimeClient settings
-const float UTC_OFFSET = 2;
+const float UTC_OFFSET = 0;
 
 // Wunderground Settings
 const boolean IS_METRIC = true;
 const String WUNDERGRROUND_API_KEY = "<WUNDERGROUND KEY HERE>";
 const String WUNDERGRROUND_LANGUAGE = "EN";
-const String WUNDERGROUND_COUNTRY = "CH";
-const String WUNDERGROUND_CITY = "Zurich";
+const String WUNDERGROUND_COUNTRY = "Mali";
+const String WUNDERGROUND_CITY = "Timbuktu";
 
 //Thingspeak Settings
 const String THINGSPEAK_CHANNEL_ID = "67284";
