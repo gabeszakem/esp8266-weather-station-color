@@ -24,12 +24,12 @@ You also need to get an API key for the Wunderground data: https://www.wundergro
 | ILI9341       | NodeMCU      |
 | ------------- |:-------------:| 
 | MISO          | -             | 
-| LED           | 3V3           | 
+| LED           | 56Ohms to 3V3 or 5V           | 
 | SCK           | D5            | 
 | MOSI          | D7            |
-| DC/RS         | D4            |
-| RESET         | RST           |
-| CS            | D2            |
+| DC/RS         | D3            |
+| RESET         | D4           |
+| CS            | D8            |
 | GND           | GND           |
 | VCC           | 3V3           |
 
