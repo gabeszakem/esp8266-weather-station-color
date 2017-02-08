@@ -35,4 +35,4 @@ You also need to get an API key for the Wunderground data: https://www.wundergro
 | GND           | GND           |
 | VCC           | 3V3           |
 
-[*] Some 2.2" TFT displays require a current limit resistor of 56 Ohms when connected to 5V, others have a transistor switch so the LED can be PWM controlled by a digital pin to vary the backlight brightness.
+[*] Some 2.2" TFT displays require an LED current limit resistor of 56 Ohms when connected to 5V, others have a transistor switch so the LED can be PWM controlled by a digital pin to vary the backlight brightness.
