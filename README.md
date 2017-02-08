@@ -24,7 +24,7 @@ You also need to get an API key for the Wunderground data: https://www.wundergro
 | ILI9341       | NodeMCU      |
 | ------------- |:-------------:| 
 | MISO          | -             | 
-| LED           | 56Ohms to 3V3 or 5V           | 
+| LED           | 56 Ohms to 3V3 or 5V*           | 
 | SCK           | D5            | 
 | MOSI          | D7            |
 | DC/RS         | D3            |
@@ -33,3 +33,4 @@ You also need to get an API key for the Wunderground data: https://www.wundergro
 | GND           | GND           |
 | VCC           | 3V3           |
 
+* Some 2.2" TFT displays require a current limit resistor of 56 Ohms when connected to 5V, others have a transistor switch so the LED can be PWM controlled by a digital pin to vary the baclight brightness.
