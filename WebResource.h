@@ -18,6 +18,7 @@ SOFTWARE.
 See more at http://blog.squix.ch
 */
 
+#define FS_NO_GLOBALS // Avoid conflict with SD library File type definition
 #include <FS.h>
 #include <Arduino.h>
 #include <ESP8266WiFi.h>

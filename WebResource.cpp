@@ -29,12 +29,13 @@ void WebResource::downloadFile(String url, String filename) {
 }
 
 void WebResource::downloadFile(String url, String filename, ProgressCallback progressCallback) {
-    Serial.println("Downloading " + url + " and saving as " + filename);
 
     if (SPIFFS.exists(filename) == true) {
-      Serial.println("File already exists. Skipping");
+      Serial.println("Found " + filename);
       return;
     }
+    else Serial.println("Downloading "  + filename + " from " + url);
+
     // wait for WiFi connection
     if((_wifiMulti.run() == WL_CONNECTED)) {
         HTTPClient http;
@@ -49,7 +50,7 @@ void WebResource::downloadFile(String url, String filename, ProgressCallback pro
         int httpCode = http.GET();
         if(httpCode > 0) {
             //SPIFFS.remove(filename);
-            File f = SPIFFS.open(filename, "w+");
+            fs::File f = SPIFFS.open(filename, "w+");
             if (!f) {
                 Serial.println("file open failed");
                 return;
@@ -60,7 +61,7 @@ void WebResource::downloadFile(String url, String filename, ProgressCallback pro
             // file found at server
             if(httpCode == HTTP_CODE_OK) {
 
-                // get lenght of document (is -1 when Server sends no Content-Length header)
+                // get length of document (is -1 when Server sends no Content-Length header)
                 int total = http.getSize();
                 int len = total;
                 progressCallback(filename, 0,total);

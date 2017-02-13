@@ -20,6 +20,10 @@ See more at http://blog.squix.ch
 
 // Created by http://oleddisplay.squix.ch/ Consider a donation
 // In case of problems make sure that you are using the font file with the correct version!
+
+// Bodmer fix: End character is 0x7D not 0x7E, so bug in last line of the file corrected
+// this avoids screen corruption if ~ is printer
+
 const uint8_t ArialRoundedMTBold_14Bitmaps[] PROGMEM = {
 
   // Bitmap Data:
@@ -213,8 +217,8 @@ const GFXglyph ArialRoundedMTBold_14Glyphs[] PROGMEM = {
     {   735,   7,   7,   8,    0,   -7 }, // 'z'
     {   742,   5,  13,   6,    0,  -10 }, // '{'
     {   751,   2,  13,   5,    1,  -10 }, // '|'
-    {   755,   5,  13,   6,    1,  -10 } // '}'
+    {   755,   5,  13,   6,    1,  -10 } // '}' character 0x7D
 };
-const GFXfont ArialRoundedMTBold_14 PROGMEM = {
+const GFXfont ArialRoundedMTBold_14 PROGMEM = {    // Last character bug fixed 0x7E to 0x7D
 (uint8_t  *)ArialRoundedMTBold_14Bitmaps,(GFXglyph *)ArialRoundedMTBold_14Glyphs,0x20, 0x7D, 17};
 

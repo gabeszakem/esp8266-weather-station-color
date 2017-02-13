@@ -15,40 +15,44 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
 See more at http://blog.squix.ch
+
+Adapted by Bodmer to use the faster TFT_ILI9341_ESP library:
+https://github.com/Bodmer/TFT_ILI9341_ESP
+
 */
 
-#include <Adafruit_ILI9341.h>
+
+#include <TFT_ILI9341_ESP.h> // Hardware-specific library
+
+#define FS_NO_GLOBALS // Avoid conflict with SD library File type definition
 #include <FS.h>
+
+// JPEG decoder library
+#include <JPEGDecoder.h>
 
 #ifndef _GFX_UI_H
 #define _GFX_UI_H
 
-
-#define BUFFPIXEL 20
-
-enum TextAlignment {
-  LEFT, CENTER, RIGHT
-};
+// Maximum of 85 for BUFFPIXEL as 3 x this value is stored in an 8 bit variable!
+// 32 is an efficient size for SPIFFS due to SPI hardware pipeline buffer size
+// A larger value of 80 is better for SD cards
+#define BUFFPIXEL 32
 
 class GfxUi {
   public:
-    GfxUi(Adafruit_ILI9341 * tft);
-    void drawString(int x, int y, char *text);
-    void drawString(int x, int y, String text);
-    void setTextAlignment(TextAlignment alignment);
-    void setTextColor(uint16_t c);
-    void setTextColor(uint16_t c, uint16_t bg);
+    GfxUi(TFT_ILI9341_ESP * tft);
     void drawBmp(String filename, uint8_t x, uint16_t y);
     void drawProgressBar(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint8_t percentage, uint16_t frameColor, uint16_t barColor);
-
+    void jpegInfo();
+    void drawJpeg(const char *filename, int xpos, int ypos);
+    void jpegRender(int xpos, int ypos);
+    
   private:
-    Adafruit_ILI9341 * _tft;
-    TextAlignment _alignment = LEFT;
-    uint16_t _textColor;
-    uint16_t _backgroundColor;
-    uint16_t read16(File &f);
-    uint32_t read32(File &f);
+    TFT_ILI9341_ESP * _tft;
+    uint16_t read16(fs::File &f);
+    uint32_t read32(fs::File &f);
 
 };
 
