@@ -2,6 +2,10 @@ This forked copy has been adapted to be compatible with a NodeMCU 1.0 with diffe
 
 <a href="http://imgur.com/vwvLz1T"><img src="http://i.imgur.com/vwvLz1T.png" title="source: imgur.com" /></a>
 
+And tweaked weather screen:
+
+<a href="http://imgur.com/xS7fWyw"><img src="http://i.imgur.com/xS7fWyw.png" title="source: imgur.com" /></a>
+
 # esp8266-weather-station-color
 
 ESP8266 Weather Station in Color using ILI9341 TFT 240x320 display
