@@ -1,4 +1,6 @@
-This forked copy has been adapted to be compatible with a NodeMCU 1.0 with different pin allocations for the TFT display interface.
+This forked copy has been adapted to be compatible with a NodeMCU 1.0 with different pin allocations for the TFT display interface. It uses a faster TFT_ILI9341_ESP library and includes Jpeg splash screen at startup.
+
+[Imgur](http://i.imgur.com/vwvLz1T.png)
 
 # esp8266-weather-station-color
 
