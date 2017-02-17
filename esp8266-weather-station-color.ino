@@ -111,8 +111,7 @@ void setup() {
   tft.setTextColor(TFT_ORANGE, TFT_BLACK);
   
   SPIFFS.begin();
-  //listFiles(); // Uncomment to list files found in SPIFFS memory
-
+  //listFiles();
   //Uncomment if you want to erase SPIFFS and update all internet resources, this takes some time!
   //tft.drawString("Formatting SPIFFS, so wait!", 120, 200); SPIFFS.format();
 
@@ -122,12 +121,11 @@ void setup() {
   tft.drawString("Connecting to WiFi", 120, 200);
   tft.setTextPadding(240); // Pad next drawString() text to full width to over-write old text
 
-  //screenshotToConsole(); // Splash screen dump. Not supported in this sketch
+  //screenshotToConsole();
 
   //WiFiManager
   //Local intialization. Once its business is done, there is no need to keep it around
   WiFiManager wifiManager;
-
   // Uncomment for testing wifi manager
   //wifiManager.resetSettings();
   wifiManager.setAPCallback(configModeCallback);
@@ -283,7 +281,7 @@ void updateData() {
   drawForecast();
   drawAstronomy();
 
-  //if (booted) screenshotToConsole(); // Weather screen dump. Not supported in this sketch
+  //if (booted) screenshotToConsole(); // Documentation support only!
   booted = false;
 }
 
@@ -406,8 +404,8 @@ void drawCurrentWeather() {
   }
 
   tft.fillCircle(128, 110, 23, TFT_BLACK); // Erase old plot, radius + 1 to delete stray pixels
-  tft.drawCircle(128, 110, 6, TFT_RED);
   if ( windAngle >= 0 ) fillSegment(128, 110, windAngle - 15, 30, 22, TFT_GREEN); // Might replace this with a bigger rotating arrow
+  tft.drawCircle(128, 110, 6, TFT_RED);
   //tft.drawCircle(128, 110, 22, TFT_DARKGREY);    // Outer ring - optional
 
   drawSeparator(153);

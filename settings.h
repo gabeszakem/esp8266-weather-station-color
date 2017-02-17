@@ -51,11 +51,11 @@ const String WUNDERGROUND_CITY = "Lima";
 #define WIND_SPEED_SCALING 1.60934  // mph to kph
 #define WIND_SPEED_UNITS " kph"
 
-//Thingspeak Settings - no need to populate this at the moment
+//Thingspeak Settings - not used, no need to populate this at the moment
 const String THINGSPEAK_CHANNEL_ID = "<CHANNEL_ID_HERE>";
 const String THINGSPEAK_API_READ_KEY = "<API_READ_KEY_HERE>";
 
-// List of 19 items, so that the downloader knows what to fetch
+// List, so that the downloader knows what to fetch
 String wundergroundIcons [] = {"chanceflurries","chancerain","chancesleet","chancesnow","clear","cloudy","flurries","fog","hazy","mostlycloudy","mostlysunny","partlycloudy","partlysunny","rain","sleet","snow","sunny","tstorms","unknown"};
 
 /***************************
