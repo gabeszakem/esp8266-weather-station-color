@@ -6,6 +6,11 @@ And tweaked weather screen:
 
 <a href="http://imgur.com/xS7fWyw"><img src="http://i.imgur.com/xS7fWyw.png" title="source: imgur.com" /></a>
 
+
+
+
+The original Squix repository ReadMe file follows, not that some of the text is no longer relevant...
+
 # esp8266-weather-station-color
 
 ESP8266 Weather Station in Color using ILI9341 TFT 240x320 display
