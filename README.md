@@ -1,5 +1,7 @@
 This forked copy has been adapted to be compatible with a NodeMCU 1.0 with different pin allocations for the TFT display interface. It uses a faster TFT_ILI9341_ESP library and includes Jpeg splash screen at startup.
 
+This ReadMe file is not complete yet so some helpful information is missing, so bear this in mind if you want to try this sketch as it will need some Arduino project experience to get working!
+
 <a href="http://imgur.com/vwvLz1T"><img src="http://i.imgur.com/vwvLz1T.png" title="source: imgur.com" /></a>
 
 And tweaked weather screen:
@@ -9,7 +11,7 @@ And tweaked weather screen:
 
 
 
-The original Squix repository ReadMe file follows, not that some of the text is no longer relevant...
+The original Squix repository ReadMe file follows, note that some of the text is no longer relevant...
 
 # esp8266-weather-station-color
 
