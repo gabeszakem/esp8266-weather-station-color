@@ -1,12 +1,36 @@
 This forked copy has been adapted to be compatible with a NodeMCU 1.0 with different pin allocations for the TFT display interface. It uses a faster TFT_ILI9341_ESP library and includes Jpeg splash screen at startup.
 
-This ReadMe file is not complete yet so some helpful information is missing, so bear this in mind if you want to try this sketch as it will need some Arduino project experience to get working!
+This ReadMe file is not complete yet so some helpful information is missing, so bear this in mind if you want to try this sketch as it will need some Arduino project experience to get working! The ESP8266 support core for the Arduino IDE must be loaded via the Boards Manager. Set the upload baud rate to a high value, the CPU clock rate to 160MHz and the SPIFFS size to 3Mbytes in the IDE. The large SPIFFS size is needed to hold the image and weather icon files that will be aoutomatically downloaded from the internet.
 
 <a href="http://imgur.com/vwvLz1T"><img src="http://i.imgur.com/vwvLz1T.png" title="source: imgur.com" /></a>
 
 And tweaked weather screen:
 
 <a href="http://imgur.com/xS7fWyw"><img src="http://i.imgur.com/xS7fWyw.png" title="source: imgur.com" /></a>
+
+#The following support ibraries are needed:
+
+esp8266-weather-station via Library Manager or from this link:
+
+https://github.com/squix78/esp8266-weather-station
+
+JPEGDecoder via Library Manager or from this link:
+
+https://github.com/Bodmer/JPEGDecoder
+
+json-streaming-parser via Library Manager or from this link:
+
+https://github.com/squix78/json-streaming-parser
+
+TFT_ILI9341_ESP from this link:
+
+https://github.com/Bodmer/TFT_ILI9341_ESP
+
+WiFiManager via Library Manager or from this link:
+
+https://github.com/tzapu/WiFiManager
+
+
 
 
 
