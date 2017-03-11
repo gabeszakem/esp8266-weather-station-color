@@ -1,6 +1,10 @@
 This forked copy has been adapted to be compatible with a NodeMCU 1.0 with different pin allocations for the TFT display interface. It uses a faster TFT_ILI9341_ESP library and includes Jpeg splash screen at startup.
 
-This ReadMe file is not complete yet so some helpful information is missing, so bear this in mind if you want to try this sketch as it will need some Arduino project experience to get working! The ESP8266 support core for the Arduino IDE must be loaded via the Boards Manager. Set the upload baud rate to a high value, the CPU clock rate to 160MHz and the SPIFFS size to 3Mbytes in the IDE. The large SPIFFS size is needed to hold the image and weather icon files that will be aoutomatically downloaded from the internet.
+This ReadMe file is not complete yet so some helpful information is missing, so bear this in mind if you want to try this sketch as it will need some Arduino project experience to get working!  edits to the settings.h file will be needed to set your location and to add the Weather Underground API key. You can get this API key by setting up a free account on the Weather Underground website.
+
+The ESP8266 support core for the Arduino IDE must be loaded via the Boards Manager. Set the upload baud rate to a high value, the CPU clock rate to 160MHz and the SPIFFS size to 3Mbytes in the IDE. The large SPIFFS size is needed to hold the image and weather icon files that will be automatically downloaded from the internet.
+
+Splash startup screen:
 
 <a href="http://imgur.com/vwvLz1T"><img src="http://i.imgur.com/vwvLz1T.png" title="source: imgur.com" /></a>
 
