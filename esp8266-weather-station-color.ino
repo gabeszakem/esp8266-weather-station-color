@@ -32,7 +32,7 @@
   Icons nudged about slightly to add wind direction
 */
 
-//#include <Arduino.h>
+#include <Arduino.h>
 
 #include <SPI.h>
 #include <TFT_ILI9341_ESP.h> // Hardware-specific library
