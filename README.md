@@ -10,7 +10,15 @@ Splash startup screen:
 
 And tweaked weather screen:
 
-<a href="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_1.jpg"><img src="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_1.jpg" width="240" height="320"  /></a>
+<a href="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_1.jpg"><img src="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_1.jpg" width="240" height="320"  /> </a>
+
+<a href="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_2.jpg"><img src="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_2.jpg" width="240" height="320"  /></a>
+
+<a href="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_3.jpg"><img src="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_3.jpg" width="240" height="320"  /></a>
+
+<a href="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_4.jpg"><img src="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_4.jpg" width="240" height="320"  /></a>
+
+<a href="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_5.jpg"><img src="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_5.jpg" width="240" height="320"  /></a>
 
 #The following support ibraries are needed:
 
