@@ -77,3 +77,9 @@ You also need to get an API key for the Wunderground data: https://www.wundergro
 | VCC           | 3V3           |
 
 [*] Some 2.2" TFT displays require an LED current limit resistor of 56 Ohms when connected to 5V, others have a transistor switch so the LED can be PWM controlled by a digital pin to vary the backlight brightness.
+
+
+Add this in Sd2PinMap.h:
+line20:
+#if defined(__arm__) || defined(__XTENSA__) || defined(ESP32) // Arduino Due Board follows
+;) - See more at: http://www.esp8266.com/viewtopic.php?p=59632#sthash.QPGb48ZQ.dpuf
