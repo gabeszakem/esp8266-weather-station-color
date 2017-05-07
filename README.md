@@ -9,8 +9,7 @@ The ESP8266 support core for the Arduino IDE must be loaded via the Boards Manag
 
 | <a href="http://imgur.com/vwvLz1T"><img src="http://i.imgur.com/vwvLz1T.png" title="source: imgur.com" width="240" height="320"/></a> |<a href="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_1.jpg"><img src="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_1.jpg" width="240" height="320"  /> </a> |<a href="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_2.jpg"><img src="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_2.jpg" width="240" height="320"  /> </a> |
 
-| ![Splash startup screen:](https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_3.jpg) | ![](https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_4.jpg) | ![](https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_5.jpg) |
-
+|<a href="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_3.jpg"><img src="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_3.jpg" width="240" height="320"  /> </a> |<a href="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_4.jpg"><img src="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_4.jpg" width="240" height="320"  /> </a> |<a href="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_5.jpg"><img src="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_5.jpg" width="240" height="320"  /> </a> |
 
 #The following support libraries are needed:
 
