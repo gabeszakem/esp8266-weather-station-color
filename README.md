@@ -10,7 +10,7 @@ Splash startup screen:
 
 And tweaked weather screen:
 
-<a href="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_1.jpg"><img src="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_1.jpg"  /></a>
+<a href="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_1.jpg"><img src="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_1.jpg" width="240" height="320"  /></a>
 
 #The following support ibraries are needed:
 
