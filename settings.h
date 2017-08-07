@@ -27,7 +27,7 @@ https://github.com/Bodmer/TFT_ILI9341_ESP
 const int UPDATE_INTERVAL_SECS = 10 * 60; // Update every 10 minutes
 
 // HOSTNAME for OTA update
-#define HOSTNAME "ESP8266-OTA-WEATHER-COLOR"
+#define HOSTNAME "ESP8266-OTA-WEATHER-COLOR-ETKEZO"
 
 // Pins for the TFT interface are defined in the User_Config.h file inside the TFT_ILI9341_ESP library
 // These are the ones I used on a NodeMCU:
@@ -51,10 +51,10 @@ struct dstRule EndRule = {"CET", Last, Sun, Oct, 2, 0};       // Central Europea
 
 // Wunderground Settings, EDIT TO SUIT YOUR LOCATION
 const boolean IS_METRIC = true; // Temperature only? Wind speed units appear to stay in mph. To do: investigate <<<<<<<<<<<<<<<<<<<<<<<<<
-const String WUNDERGRROUND_API_KEY = "<WUNDERGROUND KEY HERE>";
-const String WUNDERGRROUND_LANGUAGE = "EN";
-const String WUNDERGROUND_COUNTRY = "EN";
-const String WUNDERGROUND_CITY = "CITY"; 
+const String WUNDERGRROUND_API_KEY = "0fcd53ef95539db4";
+const String WUNDERGRROUND_LANGUAGE = "HU";
+const String WUNDERGROUND_COUNTRY = "HU";
+const String WUNDERGROUND_CITY = "Dunaujvaros"; 
 
 // Windspeed conversion, use 1 pair of #defines. To do: investigate a more convenient method <<<<<<<<<<<<<<<<<<<<<
 //#define WIND_SPEED_SCALING 1.0      // mph
@@ -71,14 +71,17 @@ const String WUNDERGROUND_CITY = "CITY";
 //receive temperature signal from other device over udp connection USE UDP OR THINGSPEAK
 const boolean USE_UDPSERVER=true;
 const unsigned int UDPPort = 2807;
-const int packetSize = 100;
+const int packetSize = 1024;
+
+const unsigned int UDPPortNappali = 2807;
+const IPAddress UDPNappaliIP =IPAddress(192,168,1,31);
 
 //receive temperature signal rom other device over thingspeak connection USE UDP OR THINGSPEAK
 /*Thingspeak communication to slow, not working time well. */
 const boolean USE_THINGSPEAK=false;
 //Thingspeak Settings - not used, no need to populate this at the moment
-const unsigned long THINGSPEAK_CHANNEL_ID = <CHANNEL_ID_HERE>;
-const char * THINGSPEAK_API_READ_KEY = "<API_READ_KEY_HERE>";
+const unsigned long THINGSPEAK_CHANNEL_ID = 206323;
+const char * THINGSPEAK_API_READ_KEY = "OJZPFFWD11FS3Z1M";
 
 const int UPDATETHINGSPEAK = 60;
 
@@ -88,6 +91,10 @@ const int UPDATEFRAMETIME = 10;
 // List, so that the downloader knows what to fetch
 String wundergroundIcons [] = {"chanceflurries","chancerain","chancesleet","chancesnow","clear","cloudy","flurries","fog","hazy","mostlycloudy","mostlysunny","partlycloudy","partlysunny","rain","sleet","snow","sunny","tstorms","unknown"};
 
+
+
+/*const unsigned int UDPPort = 2807;
+const IPAddress UDPNappaliIP =IPAddress(192,168,1,33);
 /***************************
  * End Settings
  **************************/

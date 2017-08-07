@@ -4,14 +4,15 @@ This ReadMe file is not complete yet so some helpful information is missing, so 
 
 The ESP8266 support core for the Arduino IDE must be loaded via the Boards Manager. Set the upload baud rate to a high value, the CPU clock rate to 160MHz and the SPIFFS size to 3Mbytes in the IDE. The large SPIFFS size is needed to hold the image and weather icon files that will be automatically downloaded from the internet.
 
+Splash startup screen:
 
+<a href="http://imgur.com/vwvLz1T"><img src="http://i.imgur.com/vwvLz1T.png" title="source: imgur.com" /></a>
 
+And tweaked weather screen:
 
-| <a href="http://imgur.com/vwvLz1T"><img src="http://i.imgur.com/vwvLz1T.png" title="source: imgur.com" width="240" height="320"/></a> |<a href="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_1.jpg"><img src="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_1.jpg" width="240" height="320"  /> </a> |<a href="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_2.jpg"><img src="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_2.jpg" width="240" height="320"  /> </a> |
+<a href="http://imgur.com/xS7fWyw"><img src="http://i.imgur.com/xS7fWyw.png" title="source: imgur.com" /></a>
 
-|<a href="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_3.jpg"><img src="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_3.jpg" width="240" height="320"  /> </a> |<a href="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_4.jpg"><img src="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_4.jpg" width="240" height="320"  /> </a> |<a href="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_5.jpg"><img src="https://github.com/gabeszakem/esp8266-weather-station-color/blob/master/images/IMG_5.jpg" width="240" height="320"  /> </a> |
-
-#The following support libraries are needed:
+#The following support ibraries are needed:
 
 esp8266-weather-station via Library Manager or from this link:
 
